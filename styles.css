@@ -28,19 +28,86 @@
   border-radius: 100%;
 }
 
+@keyframes leafOne {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-5deg);
+  }
+  50%  {
+    transform: rotate(0deg);
+  }
+  50%  {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 #leaf1 {
   left: 41%;
   background-color: #2ECC71;
+  animation-name: leafOne;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes leafTwo {
+  0%   {
+    transform: rotate(-45deg);
+  }
+  25%  {
+    transform: rotate(-50deg);
+  }
+  50%  {
+    transform: rotate(-45deg);
+  }
+  50%  {
+    transform: rotate(-40deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }
 
 #leaf2 {
   left: 30%;
   transform: rotate(-45deg);
   background-color: #58D68D;
+  animation-name: leafTwo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes leafThree {
+  0%   {
+    transform: rotate(45deg);
+  }
+  25%  {
+    transform: rotate(50deg);
+  }
+  50%  {
+    transform: rotate(45deg);
+  }
+  50%  {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
 }
 
 #leaf3 {
   right: 30%;
   transform: rotate(45deg);
   background-color: #82E0AA;
+  animation-name: leafThree;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
