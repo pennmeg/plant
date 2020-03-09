@@ -20,7 +20,7 @@
   border-radius: 10px 10px 5px 5px;
 }
 
-div[class^='plant__leaves'] {
+.plant__leaves {
   position: absolute;
   width: 18%;
   height: 40%;
@@ -28,18 +28,18 @@ div[class^='plant__leaves'] {
   border-radius: 100%;
 }
 
-.plant__leaves1 {
+#leaf1 {
   left: 41%;
   background-color: #2ECC71;
 }
 
-.plant__leaves2 {
+#leaf2 {
   left: 30%;
   transform: rotate(-45deg);
   background-color: #58D68D;
 }
 
-.plant__leaves3 {
+#leaf3 {
   right: 30%;
   transform: rotate(45deg);
   background-color: #82E0AA;
